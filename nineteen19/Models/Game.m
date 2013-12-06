@@ -72,4 +72,12 @@
         return NO;
     }
 }
+
+- (BOOL) isCleared{
+    if ((int) [self.answers count]){
+        return NO;
+    } else {
+        return YES;
+    }
+}
 @end

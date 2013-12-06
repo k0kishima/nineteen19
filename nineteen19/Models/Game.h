@@ -15,4 +15,5 @@
 - (void) prepareQuestions;
 - (NSMutableArray*) question;
 - (BOOL) verify:(int) answer;
+- (BOOL) isCleared;
 @end
