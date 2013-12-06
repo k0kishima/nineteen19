@@ -66,6 +66,26 @@ describe(@"Game", ^{
             [[theValue([[operands objectAtIndex:0] integerValue] * [[operands objectAtIndex:1] integerValue]) should] equal:theValue([[game.answers lastObject] intValue])];
         });
     });
+    
+    describe(@"-verify", ^{
+        describe(@"verifies the answer", ^{
+            context(@"when the answer is correct", ^{
+                it(@"returns the YES", ^{
+                    NSMutableArray* operands = [game question];
+                    NSUInteger answer = [[operands objectAtIndex:0] integerValue] * [[operands objectAtIndex:1] integerValue];
+                    [[theValue([game verify:(int)answer]) should] equal:theValue(YES)];
+                });
+            });
+            
+            context(@"when the answer is not correct", ^{
+                it(@"returns the NO", ^{
+                    NSMutableArray* operands = [game question];
+                    NSUInteger incorrectAnswer = [[operands objectAtIndex:0] integerValue] * [[operands objectAtIndex:1] integerValue] + 1;
+                    [[theValue([game verify:(int)incorrectAnswer]) should] equal:theValue(NO)];
+                });
+            });
+        });
+    });
 
 });
 

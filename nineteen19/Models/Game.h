@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Game : NSObject
-@property NSMutableArray *questions;
-@property NSMutableArray *answers;
-
+@property (nonatomic, retain) NSMutableArray *questions;
+@property (nonatomic, retain) NSMutableArray *answers;
 
 - (void) prepareQuestions;
 - (NSMutableArray*) question;
+- (BOOL) verify:(int) answer;
 @end

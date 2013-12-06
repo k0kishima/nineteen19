@@ -64,4 +64,12 @@
     return operands;
 }
 
+- (BOOL) verify:(int)answer{
+    if ([[answers lastObject] integerValue] == answer){
+        [answers removeLastObject];
+        return YES;
+    } else {
+        return NO;
+    }
+}
 @end
