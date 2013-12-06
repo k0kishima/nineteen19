@@ -55,4 +55,13 @@
         }
     }
 }
+
+- (NSMutableArray*) question{
+    NSMutableArray *expressions = [questions objectAtIndex:[[answers lastObject] integerValue]];
+    int indexOfExpressions = arc4random() % (int) [expressions count];
+    NSMutableArray *operands = [expressions objectAtIndex:indexOfExpressions];
+    
+    return operands;
+}
+
 @end

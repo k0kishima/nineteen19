@@ -16,13 +16,10 @@ describe(@"Game", ^{
     
     beforeAll(^{
         game = [Game alloc];
+        [game prepareQuestions];
     });
     
     describe(@"-prepareQuestions", ^{
-        beforeAll(^{
-            [game prepareQuestions];
-        });
-        
         describe(@"initializes the questions property and the answers property", ^{
             describe(@".questions", ^{
                 describe(@"a element", ^{
@@ -63,6 +60,13 @@ describe(@"Game", ^{
         
     });
     
+    describe(@"-question", ^{
+        it(@"returns operands of the expression for the question", ^{
+            NSMutableArray* operands = [game question];
+            [[theValue([[operands objectAtIndex:0] integerValue] * [[operands objectAtIndex:1] integerValue]) should] equal:theValue([[game.answers lastObject] intValue])];
+        });
+    });
+
 });
 
 SPEC_END
