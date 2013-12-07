@@ -20,6 +20,10 @@
 		05BFB57418470DB400EC6DDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55918470DB400EC6DDC /* Foundation.framework */; };
 		05BFB57518470DB400EC6DDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55D18470DB400EC6DDC /* UIKit.framework */; };
 		05BFB57D18470DB400EC6DDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05BFB57B18470DB400EC6DDC /* InfoPlist.strings */; };
+		05CCC3551852BD81000DD29B /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CCC3531852BD81000DD29B /* StartViewController.m */; };
+		05CCC3561852BD81000DD29B /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05CCC3541852BD81000DD29B /* StartViewController.xib */; };
+		05CCC35A1852BF99000DD29B /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CCC3581852BF99000DD29B /* PlayViewController.m */; };
+		05CCC35B1852BF99000DD29B /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05CCC3591852BF99000DD29B /* PlayViewController.xib */; };
 		1AEA500D4ADE4BF8BC0580E0 /* libPods-nineteen19Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 823FDB50D6064CB29180E9A6 /* libPods-nineteen19Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,12 @@
 		05BFB57218470DB400EC6DDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		05BFB57A18470DB400EC6DDC /* nineteen19Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nineteen19Tests-Info.plist"; sourceTree = "<group>"; };
 		05BFB57C18470DB400EC6DDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05CCC3521852BD81000DD29B /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		05CCC3531852BD81000DD29B /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		05CCC3541852BD81000DD29B /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		05CCC3571852BF99000DD29B /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		05CCC3581852BF99000DD29B /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		05CCC3591852BF99000DD29B /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
 		2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nineteen19Tests.xcconfig"; path = "Pods/Pods-nineteen19Tests.xcconfig"; sourceTree = "<group>"; };
 		823FDB50D6064CB29180E9A6 /* libPods-nineteen19Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nineteen19Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +135,7 @@
 		05BFB55F18470DB400EC6DDC /* nineteen19 */ = {
 			isa = PBXGroup;
 			children = (
+				05CCC3511852BCBD000DD29B /* ViewControllers */,
 				059F08B6184C1FFA0098A641 /* Models */,
 				05BFB56818470DB400EC6DDC /* AppDelegate.h */,
 				05BFB56918470DB400EC6DDC /* AppDelegate.m */,
@@ -161,6 +172,19 @@
 				05BFB57B18470DB400EC6DDC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05CCC3511852BCBD000DD29B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05CCC3521852BD81000DD29B /* StartViewController.h */,
+				05CCC3531852BD81000DD29B /* StartViewController.m */,
+				05CCC3541852BD81000DD29B /* StartViewController.xib */,
+				05CCC3571852BF99000DD29B /* PlayViewController.h */,
+				05CCC3581852BF99000DD29B /* PlayViewController.m */,
+				05CCC3591852BF99000DD29B /* PlayViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +264,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CCC35B1852BF99000DD29B /* PlayViewController.xib in Resources */,
 				05BFB56418470DB400EC6DDC /* InfoPlist.strings in Resources */,
 				05BFB56C18470DB400EC6DDC /* Images.xcassets in Resources */,
+				05CCC3561852BD81000DD29B /* StartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				059F08B9184C206D0098A641 /* Game.m in Sources */,
+				05CCC3551852BD81000DD29B /* StartViewController.m in Sources */,
 				05BFB56A18470DB400EC6DDC /* AppDelegate.m in Sources */,
+				05CCC35A1852BF99000DD29B /* PlayViewController.m in Sources */,
 				05BFB56618470DB400EC6DDC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
