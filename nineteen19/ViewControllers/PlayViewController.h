@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Game.h"
 
-@interface PlayViewController : UIViewController
+@interface PlayViewController : UIViewController{
+    IBOutlet UITextField *promptField;
+    IBOutlet UILabel *expressionLabel;
+    IBOutlet UIProgressView *progressView;
+    
+    NSString *currentAnswer;
+    Game *game;
+    double remainder;
+}
 
+- (IBAction)tenkeyPressed:(id)sender;
+- (IBAction)clearkeyPressed:(id)sender;
+- (IBAction)enterkeyPressed:(id)sender;
 @end
