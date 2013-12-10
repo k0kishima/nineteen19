@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059F08B9184C206D0098A641 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 059F08B8184C206D0098A641 /* Game.m */; };
+		059F08BB184CC39D0098A641 /* GameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 059F08BA184CC39D0098A641 /* GameSpec.m */; };
 		05BFB55A18470DB400EC6DDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55918470DB400EC6DDC /* Foundation.framework */; };
 		05BFB55C18470DB400EC6DDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55B18470DB400EC6DDC /* CoreGraphics.framework */; };
 		05BFB55E18470DB400EC6DDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55D18470DB400EC6DDC /* UIKit.framework */; };
@@ -18,7 +20,7 @@
 		05BFB57418470DB400EC6DDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55918470DB400EC6DDC /* Foundation.framework */; };
 		05BFB57518470DB400EC6DDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55D18470DB400EC6DDC /* UIKit.framework */; };
 		05BFB57D18470DB400EC6DDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05BFB57B18470DB400EC6DDC /* InfoPlist.strings */; };
-		05BFB57F18470DB400EC6DDC /* nineteen19Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BFB57E18470DB400EC6DDC /* nineteen19Tests.m */; };
+		1AEA500D4ADE4BF8BC0580E0 /* libPods-nineteen19Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 823FDB50D6064CB29180E9A6 /* libPods-nineteen19Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		059F08B7184C206D0098A641 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		059F08B8184C206D0098A641 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		059F08BA184CC39D0098A641 /* GameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSpec.m; sourceTree = "<group>"; };
 		05BFB55618470DB400EC6DDC /* nineteen19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nineteen19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BFB55918470DB400EC6DDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05BFB55B18470DB400EC6DDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +52,8 @@
 		05BFB57218470DB400EC6DDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		05BFB57A18470DB400EC6DDC /* nineteen19Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nineteen19Tests-Info.plist"; sourceTree = "<group>"; };
 		05BFB57C18470DB400EC6DDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		05BFB57E18470DB400EC6DDC /* nineteen19Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nineteen19Tests.m; sourceTree = "<group>"; };
+		2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nineteen19Tests.xcconfig"; path = "Pods/Pods-nineteen19Tests.xcconfig"; sourceTree = "<group>"; };
+		823FDB50D6064CB29180E9A6 /* libPods-nineteen19Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nineteen19Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +74,22 @@
 				05BFB57318470DB400EC6DDC /* XCTest.framework in Frameworks */,
 				05BFB57518470DB400EC6DDC /* UIKit.framework in Frameworks */,
 				05BFB57418470DB400EC6DDC /* Foundation.framework in Frameworks */,
+				1AEA500D4ADE4BF8BC0580E0 /* libPods-nineteen19Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		059F08B6184C1FFA0098A641 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				059F08B7184C206D0098A641 /* Game.h */,
+				059F08B8184C206D0098A641 /* Game.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		05BFB54D18470DB400EC6DDC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +97,7 @@
 				05BFB57818470DB400EC6DDC /* nineteen19Tests */,
 				05BFB55818470DB400EC6DDC /* Frameworks */,
 				05BFB55718470DB400EC6DDC /* Products */,
+				2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +117,7 @@
 				05BFB55B18470DB400EC6DDC /* CoreGraphics.framework */,
 				05BFB55D18470DB400EC6DDC /* UIKit.framework */,
 				05BFB57218470DB400EC6DDC /* XCTest.framework */,
+				823FDB50D6064CB29180E9A6 /* libPods-nineteen19Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +125,7 @@
 		05BFB55F18470DB400EC6DDC /* nineteen19 */ = {
 			isa = PBXGroup;
 			children = (
+				059F08B6184C1FFA0098A641 /* Models */,
 				05BFB56818470DB400EC6DDC /* AppDelegate.h */,
 				05BFB56918470DB400EC6DDC /* AppDelegate.m */,
 				05BFB56B18470DB400EC6DDC /* Images.xcassets */,
@@ -129,7 +148,7 @@
 		05BFB57818470DB400EC6DDC /* nineteen19Tests */ = {
 			isa = PBXGroup;
 			children = (
-				05BFB57E18470DB400EC6DDC /* nineteen19Tests.m */,
+				059F08BA184CC39D0098A641 /* GameSpec.m */,
 				05BFB57918470DB400EC6DDC /* Supporting Files */,
 			);
 			path = nineteen19Tests;
@@ -168,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05BFB58518470DB400EC6DDC /* Build configuration list for PBXNativeTarget "nineteen19Tests" */;
 			buildPhases = (
+				B87E674E0B6F4764BB8F4082 /* Check Pods Manifest.lock */,
 				05BFB56D18470DB400EC6DDC /* Sources */,
 				05BFB56E18470DB400EC6DDC /* Frameworks */,
 				05BFB56F18470DB400EC6DDC /* Resources */,
+				537340D973644B9BB3D76663 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,11 +255,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		537340D973644B9BB3D76663 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-nineteen19Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B87E674E0B6F4764BB8F4082 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05BFB55218470DB400EC6DDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059F08B9184C206D0098A641 /* Game.m in Sources */,
 				05BFB56A18470DB400EC6DDC /* AppDelegate.m in Sources */,
 				05BFB56618470DB400EC6DDC /* main.m in Sources */,
 			);
@@ -248,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BFB57F18470DB400EC6DDC /* nineteen19Tests.m in Sources */,
+				059F08BB184CC39D0098A641 /* GameSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +437,7 @@
 		};
 		05BFB58618470DB400EC6DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/nineteen19.app/nineteen19";
@@ -405,6 +461,7 @@
 		};
 		05BFB58718470DB400EC6DDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/nineteen19.app/nineteen19";
@@ -441,6 +498,7 @@
 				05BFB58418470DB400EC6DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05BFB58518470DB400EC6DDC /* Build configuration list for PBXNativeTarget "nineteen19Tests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +507,7 @@
 				05BFB58718470DB400EC6DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
