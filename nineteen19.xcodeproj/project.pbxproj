@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054B49C718569D3100E13900 /* FinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054B49C518569D3100E13900 /* FinishViewController.m */; };
+		054B49C818569D3100E13900 /* FinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054B49C618569D3100E13900 /* FinishViewController.xib */; };
 		059F08B9184C206D0098A641 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 059F08B8184C206D0098A641 /* Game.m */; };
 		059F08BB184CC39D0098A641 /* GameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 059F08BA184CC39D0098A641 /* GameSpec.m */; };
 		05BFB55A18470DB400EC6DDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BFB55918470DB400EC6DDC /* Foundation.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054B49C418569D3100E13900 /* FinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishViewController.h; sourceTree = "<group>"; };
+		054B49C518569D3100E13900 /* FinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishViewController.m; sourceTree = "<group>"; };
+		054B49C618569D3100E13900 /* FinishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinishViewController.xib; sourceTree = "<group>"; };
 		059F08B7184C206D0098A641 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		059F08B8184C206D0098A641 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		059F08BA184CC39D0098A641 /* GameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSpec.m; sourceTree = "<group>"; };
@@ -183,6 +188,9 @@
 				05CCC3571852BF99000DD29B /* PlayViewController.h */,
 				05CCC3581852BF99000DD29B /* PlayViewController.m */,
 				05CCC3591852BF99000DD29B /* PlayViewController.xib */,
+				054B49C418569D3100E13900 /* FinishViewController.h */,
+				054B49C518569D3100E13900 /* FinishViewController.m */,
+				054B49C618569D3100E13900 /* FinishViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05CCC35B1852BF99000DD29B /* PlayViewController.xib in Resources */,
+				054B49C818569D3100E13900 /* FinishViewController.xib in Resources */,
 				05BFB56418470DB400EC6DDC /* InfoPlist.strings in Resources */,
 				05BFB56C18470DB400EC6DDC /* Images.xcassets in Resources */,
 				05CCC3561852BD81000DD29B /* StartViewController.xib in Resources */,
@@ -320,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				059F08B9184C206D0098A641 /* Game.m in Sources */,
+				054B49C718569D3100E13900 /* FinishViewController.m in Sources */,
 				05CCC3551852BD81000DD29B /* StartViewController.m in Sources */,
 				05BFB56A18470DB400EC6DDC /* AppDelegate.m in Sources */,
 				05CCC35A1852BF99000DD29B /* PlayViewController.m in Sources */,

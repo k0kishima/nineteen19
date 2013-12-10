@@ -7,6 +7,7 @@
 //
 
 #import "PlayViewController.h"
+#import "FinishViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface PlayViewController ()
@@ -64,6 +65,9 @@
         [progressView setProgress:progressView.progress + (double) 1.0 / remainder animated:YES];
         
         if ([game isCleared]) {
+            FinishViewController* finishViewController = [[FinishViewController alloc] init];
+            [self.navigationController pushViewController:finishViewController animated:YES];
+            return;
         }
         
         NSMutableArray* operands = [game question];
