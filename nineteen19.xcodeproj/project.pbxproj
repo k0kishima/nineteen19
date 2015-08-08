@@ -67,8 +67,9 @@
 		05CCC3571852BF99000DD29B /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		05CCC3581852BF99000DD29B /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		05CCC3591852BF99000DD29B /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
-		2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nineteen19Tests.xcconfig"; path = "Pods/Pods-nineteen19Tests.xcconfig"; sourceTree = "<group>"; };
+		35E3BC29C867B847BD4E25D0 /* Pods-nineteen19Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nineteen19Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nineteen19Tests/Pods-nineteen19Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		823FDB50D6064CB29180E9A6 /* libPods-nineteen19Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-nineteen19Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3FA4E18DB48DF9ACDA938B /* Pods-nineteen19Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nineteen19Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nineteen19Tests/Pods-nineteen19Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +113,7 @@
 				05BFB57818470DB400EC6DDC /* nineteen19Tests */,
 				05BFB55818470DB400EC6DDC /* Frameworks */,
 				05BFB55718470DB400EC6DDC /* Products */,
-				2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */,
+				2BABE8D4F6C93BD68CAB213A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +194,15 @@
 				054B49C618569D3100E13900 /* FinishViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2BABE8D4F6C93BD68CAB213A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35E3BC29C867B847BD4E25D0 /* Pods-nineteen19Tests.debug.xcconfig */,
+				EF3FA4E18DB48DF9ACDA938B /* Pods-nineteen19Tests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +313,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-nineteen19Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nineteen19Tests/Pods-nineteen19Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B87E674E0B6F4764BB8F4082 /* Check Pods Manifest.lock */ = {
@@ -475,7 +485,7 @@
 		};
 		05BFB58618470DB400EC6DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */;
+			baseConfigurationReference = 35E3BC29C867B847BD4E25D0 /* Pods-nineteen19Tests.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/nineteen19.app/nineteen19";
@@ -499,7 +509,7 @@
 		};
 		05BFB58718470DB400EC6DDC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2855500573E24585AB18CCCF /* Pods-nineteen19Tests.xcconfig */;
+			baseConfigurationReference = EF3FA4E18DB48DF9ACDA938B /* Pods-nineteen19Tests.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/nineteen19.app/nineteen19";
