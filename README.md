@@ -10,36 +10,18 @@
 * アプリケーションを起動するとスタート画面が表示されます。
 * スタートボタンで19の段からの出題が開始されます。
 * 全問正解するまで出題が続きます(プログレスバーで進捗を確認可能)。
-* 全問正解するとクリア画面に遷移し、正答率やクリアにかかった時間などを確認できます(※未実装)。
-
-![画面遷移図](http://linuxserver.jp/wp-content/uploads/2015/08/nineteen19-activity.jpg)
+* 全問正解するとクリア画面に遷移します。
 
 ## プロジェクトのインストール
 
 以下の手順でXcodeにプロジェクトを追加します。
 
 * Xcode起動
-* "Check out an existing project"をクリック
-* "Or enter a repository location:"に"git@github.com:vertex-japan/nineteen19.git"を入力
-* 配置先を選択してチェックアウト実行
+* "Clone an existing project" をクリック
+* `git@github.com:k0kishima/nineteen19.git` を入力
+* 配置先を選択して clone を実行
 
-※Xcode6.4での操作手順となります。他のバージョンでは手順や入力項目が異なる場合があります。
-
-### CocoaPodsのインストール
-
-ビルド時のテストに用いるテスティングフレームワークなどが必要なため、下記手順でインストールします。
-
-````
-gem install cocoapods
-pod setup
-````
-
-CocoaPodsのインストールが完了したら、本プロジェクトで利用するライブラリをインストールします。
-
-````
-cd /path/to/project
-pod install
-````
+※Xcode12.3 での操作手順となります。他のバージョンでは手順や入力項目が異なる場合があります。
 
 ## アプリケーションの実行
 
